@@ -1,0 +1,455 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+.brand-logo{
+    width: 25%;
+}
+
+
+@media (min-width: 768px) {
+    .brand-logo{
+        width: 10%;
+    }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: rgb(11, 78, 2);
+visibility: collapse;
+border-radius: 10px;
+transition: 500ms;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #04ff42;
+visibility: visible;
+transition: 500ms;
+}
+
+
+.comment-card-button {
+    border-color: rgb(11, 172, 11)!important;
+    display: inline-block !important;
+    text-decoration: none !important;
+    color: rgb(11, 172, 11) !important;
+}
+        
+.comment-card-button:hover {
+    border-color: rgba(11, 172, 11, 0);
+    background-color: rgb(11, 172, 11) !important;
+    color: white !important;
+}
+        
+.profile-overflow {
+     overflow: hidden !important;
+}
+        
+.profile-overflow:hover {
+     overflow: auto !important;
+}
+
+.tab-options.nav-link {
+     color: #157347 !important;
+     transition: 500ms;
+ }
+                        
+.tab-options.nav-link:hover {
+     border: solid 1px #157347 !important;
+     border-bottom: solid 1px white !important;
+     transition: 500ms;
+}
+                        
+.tab-options.nav-link.active {
+    border: solid 1px #157347 !important;
+    background-color: #157347 !important;
+    color: white !important;
+    transition: 500ms;
+}
+/*media queries*/
+
+/******************************************************************************************************
+*                                Custom switch button
+******************************************************************************************************/
+.btn-main{
+  color: black;
+  background-color: rgb(102,255,102);
+  border-color: rgb(102,255,102);
+
+}
+
+.btn-main:hover{
+  color: black;
+  background-color: rgb(153,255,153);
+  border-color: rgb(153,255,153);
+
+}
+
+.custom-switch-container{
+    display: inline-block !important;
+}
+  /* Switch sizes xsm/sm/normal/lg/xlg */
+.custom-switch-container .custom-switch-control-xsm{
+    width: 3rem!important; 
+    height: 1.5rem!important;
+    border-radius: 50rem !important;
+}
+.custom-switch-container .custom-switch-control-sm{
+    width: 5rem!important; 
+    height: 2.5rem!important;
+    border-radius: 50rem !important;
+}
+.custom-switch-container .custom-switch-control{
+    width: 6rem!important; 
+    height: 3rem!important;
+    border-radius: 50rem !important;
+}
+
+.custom-switch-container .custom-switch-control-lg{
+    width: 10rem!important; 
+    height: 5rem!important;
+    border-radius: 50rem !important;
+}
+
+.custom-switch-container .custom-switch-control-xlg{ 
+    width: 20rem; 
+    height: 10rem;
+    border-radius: 50rem !important;
+}
+
+/*Custom switch checkbox UI*/
+.custom-switch{
+    border: solid 1px rgba(0, 0, 0, 0.349);
+    border-radius: 50rem !important;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem rgba(0, 0, 0, 0.281);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    appearance: none;
+    vertical-align: top;
+    background-size:contain;
+    background-color: rgb(255, 255, 255);
+    transition: all 500ms;
+}
+.custom-switch:checked{
+    background-color: rgb(0, 0, 0);
+    transition: all 500ms;
+}
+
+/*Custom switch indicator on/off */
+.custom-switch::after{
+    content: "";
+    position:absolute;
+    background-color: rgb(0, 0, 0);
+    top:0;
+    left:0; 
+    width:50%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 50%;
+    transition: all ease-in 500ms;
+}
+.custom-switch:checked::after{
+    background-color: rgb(255, 255, 255);
+    left:50%;
+    transition: all ease-out 500ms;
+}
+
+.custom-switch::before{
+    content: "";
+    position:absolute;
+    text-align: center;
+    top:0;
+    left:0;
+    font-size: 1.5rem !important;
+    line-height: 2.9rem !important;
+    font-family: bootstrap-icons!important;
+    border-radius: 50%;
+    z-index: 1;
+    color:white;
+    width: 50%;
+    height: 100%;
+    transition: all ease-in 500ms;
+}
+.custom-switch:checked::before{
+    content: "";
+    color:black;
+    left:50%;
+    transition: all ease-out 500ms;
+}
+/*symbol sizes*/
+.custom-switch-control-xsm .custom-switch::before{
+    font-size: 0.5rem !important;
+    line-height: 1.4rem !important;
+}
+.custom-switch-control-sm .custom-switch::before{
+    font-size: 1rem !important;
+    line-height: 2.4rem !important;
+}
+.custom-switch-control-lg .custom-switch::before{
+    font-size:3rem !important;
+    line-height: 4.9rem !important;
+}
+
+.custom-switch-control-xlg .custom-switch::before{
+    font-size:5rem !important;
+    line-height: 9.7rem !important;
+}
+
+/**************************************************************************
+*                           custom switch themes
+**************************************************************************/
+
+/*Switch primary*/
+.switch-primary.custom-switch{
+    border-color: #0d6efd !important;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem #0d6efd !important;
+    background-color: #ffffff !important;
+}
+.switch-primary.custom-switch::before{
+   color:#ffffff !important;
+   transition: all ease-in 500ms;
+}
+.switch-primary.custom-switch::after{
+    background-color: #0d6efd !important;
+    transition: all ease-in 500ms;
+}
+.switch-primary.custom-switch:checked{
+    background-color: #0d6efd !important;
+}
+.switch-primary.custom-switch:checked::before{
+    color:#0d6efd !important;
+    transition: all ease-out 500ms;
+ }
+.switch-primary.custom-switch:checked::after{
+     background-color: #ffffff !important;
+     transition: all ease-out 500ms;
+}
+
+/*Secondary*/
+.switch-secondary.custom-switch{
+    border-color: #6c757d !important;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem #6c757d !important;
+    background-color: #ffffff !important;
+}
+.switch-secondary.custom-switch::before{
+   color:#ffffff !important;
+   transition: all ease-in 500ms;
+}
+.switch-secondary.custom-switch::after{
+    background-color: #6c757d !important;
+    transition: all ease-in 500ms;
+}
+.switch-secondary.custom-switch:checked{
+    background-color: #6c757d !important;
+}
+.switch-secondary.custom-switch:checked::before{
+    color:#6c757d !important;
+    transition: all ease-out 500ms;
+ }
+.switch-secondary.custom-switch:checked::after{
+     background-color: #ffffff !important;
+     transition: all ease-out 500ms;
+}
+
+/*Success*/
+.switch-success.custom-switch{
+    border-color: #198754 !important;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem #198754 !important;
+    background-color: #ffffff !important;
+}
+.switch-success.custom-switch::before{
+   color:#ffffff !important;
+   transition: all ease-in 500ms;
+}
+.switch-success.custom-switch::after{
+    background-color: #198754 !important;
+    transition: all ease-in 500ms;
+}
+.switch-success.custom-switch:checked{
+    background-color: #198754 !important;
+}
+.switch-success.custom-switch:checked::before{
+    color:#198754 !important;
+    transition: all ease-out 500ms;
+ }
+ .switch-success.custom-switch:checked::after{
+     background-color: #ffffff !important;
+     transition: all ease-out 500ms;
+}
+
+/*Danger*/
+.switch-danger.custom-switch{
+    border-color: #dc3545 !important;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem #dc3545 !important;
+    background-color: #ffffff !important;
+}
+.switch-danger.custom-switch::before{
+   color:#ffffff !important;
+   transition: all ease-in 500ms;
+}
+.switch-danger.custom-switch::after{
+    background-color: #dc3545 !important;
+    transition: all ease-in 500ms;
+}
+.switch-danger.custom-switch:checked{
+    background-color: #dc3545 !important;
+}
+.switch-danger.custom-switch:checked::before{
+    color:#dc3545 !important;
+    transition: all ease-out 500ms;
+ }
+.switch-danger.custom-switch:checked::after{
+     background-color: #ffffff !important;
+     transition: all ease-out 500ms;
+}
+
+/*Warning*/
+.switch-warning.custom-switch{
+    border-color: #ffc107 !important;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem #ffc107 !important;
+    background-color: #ffffff !important;
+}
+.switch-warning.custom-switch::before{
+   color:#ffffff !important;
+   transition: all ease-in 500ms;
+}
+.switch-warning.custom-switch::after{
+    background-color: #ffc107 !important;
+    transition: all ease-in 500ms;
+}
+.switch-warning.custom-switch:checked{
+    background-color: #ffc107 !important;
+}
+.switch-warning.custom-switch:checked::before{
+    color:#ffc107 !important;
+    transition: all ease-out 500ms;
+ }
+.switch-warning.custom-switch:checked::after{
+     background-color: #ffffff !important;
+     transition: all ease-out 500ms;
+}
+/*Info*/
+
+.switch-info.custom-switch{
+    border-color: #0dcaf0 !important;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem #0dcaf0 !important;
+    background-color: #ffffff !important;
+}
+.switch-info.custom-switch::before{
+   color:#ffffff !important;
+   transition: all ease-in 500ms;
+}
+.switch-info.custom-switch::after{
+    background-color: #0dcaf0 !important;
+    transition: all ease-in 500ms;
+}
+.switch-info.custom-switch:checked{
+    background-color: #0dcaf0 !important;
+}
+.switch-info.custom-switch:checked::before{
+    color:#0dcaf0 !important;
+    transition: all ease-out 500ms;
+ }
+.switch-info.custom-switch:checked::after{
+     background-color: #ffffff !important;
+     transition: all ease-out 500ms;
+}
+/*Light*/
+.switch-light.custom-switch{
+    border-color: #b1b1b1 !important;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem #f8f9fa !important;
+    background-color: black !important;
+}
+.switch-light.custom-switch::before{
+   color:black !important;
+   transition: all ease-in 500ms;
+}
+.switch-light.custom-switch::after{
+    background-color: #f8f9fa !important;
+    transition: all ease-in 500ms;
+}
+.switch-light.custom-switch:checked{
+    background-color: #f8f9fa !important;
+}
+.switch-light.custom-switch:checked::before{
+    color:#f8f9fa !important;
+    transition: all ease-out 500ms;
+ }
+.switch-light.custom-switch:checked::after{
+     background-color: black !important;
+     transition: all ease-out 500ms;
+}
+
+/*dark*/
+.switch-dark.custom-switch{
+    border-color: #212529 !important;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem #212529 !important;
+    background-color: #f8f9fa  !important;
+}
+.switch-dark.custom-switch::before{
+   color:#f8f9fa  !important;
+   transition: all ease-in 500ms;
+}
+.switch-dark.custom-switch::after{
+    background-color: #212529 !important;
+    transition: all ease-in 500ms;
+}
+.switch-dark.custom-switch:checked{
+    background-color: #212529 !important;
+}
+.switch-dark.custom-switch:checked::before{
+    color:#212529 !important;
+    transition: all ease-out 500ms;
+ }
+.switch-dark.custom-switch:checked::after{
+     background-color: #f8f9fa  !important;
+     transition: all ease-out 500ms;
+}
+
+/*muted*/
+.switch-muted.custom-switch{
+    border-color: #b1b1b1 !important;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem #6c757d !important;
+    background-color: #212529 !important;
+}
+.switch-muted.custom-switch::before{
+   color:#212529 !important;
+   transition: all ease-in 500ms;
+}
+.switch-muted.custom-switch::after{
+    background-color: #6c757d !important;
+    transition: all ease-in 500ms;
+}
+.switch-muted.custom-switch:checked{
+    background-color: #6c757d !important;
+}
+.switch-muted.custom-switch:checked::before{
+    color:#6c757d !important;
+    transition: all ease-out 500ms;
+ }
+.switch-muted.custom-switch:checked::after{
+     background-color: #212529 !important;
+     transition: all ease-out 500ms;
+}
+/*********************************************************
+        dark and light mode switch
+*********************************************************/
+.mode-switch.custom-switch::before{
+    content: "\F1D1";
+    transition: all ease-in 500ms;
+}
+.mode-switch.custom-switch:checked::before{
+    content: "\F494";
+    transition: all ease-out 500ms;
+}
